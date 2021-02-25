@@ -17,6 +17,7 @@ public class UserStatus_Task_10_1_StepDefinitions {
 
     @And("the user  can click Status dropdown")
     public void theUserCanClickStatusDropdown() {
+        BrowserUtils.wait(2);
         loginPage.userStatusLink.click();
     }
 

@@ -2,6 +2,7 @@ package com.cybertek.step_definitions;
 
 import com.cybertek.pages.LoginPage;
 import com.cybertek.utilities.BrowserUtils;
+import com.cybertek.utilities.Driver;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
 
@@ -17,6 +18,7 @@ public class UserManagementTable_10_2_StepDefinitions {
         List<String> actualColumnNames = BrowserUtils.getElementsText(loginPage.tableHeaders);
 
         Assert.assertEquals(expectedColumnNames, actualColumnNames);
+        Driver.closeDriver();
 
 
     }
