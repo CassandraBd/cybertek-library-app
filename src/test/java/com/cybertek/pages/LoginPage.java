@@ -43,6 +43,7 @@ public class LoginPage extends LibrarianPage {
 
     @FindBy(xpath = "//*[@id=\"menu_item\"]/li[1]/a/span[1]")
     public WebElement LoginDashBoardTitle;
+
     @FindBy(xpath = "//*[.='Log Out']")
     public WebElement LogOutLink;
 

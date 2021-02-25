@@ -20,6 +20,6 @@ public class ShowRecordsPage {
     @FindBy(tagName = "th")
     public List<WebElement> tableHeaders;
 
- //   @FindBy(linkText = "Users")
- //   public WebElement userLink;
+    @FindBy(linkText = "Users")
+    public WebElement userLink;
 }

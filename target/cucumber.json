@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "line": 4,
+        "line": 3,
         "name": "User is already in login page",
         "description": "",
         "type": "background",
@@ -11,10 +11,10 @@
         "steps": [
           {
             "result": {
-              "duration": 2803000000,
+              "duration": 3242000000,
               "status": "passed"
             },
-            "line": 5,
+            "line": 4,
             "name": "user is on the login page",
             "match": {
               "location": "com.cybertek.step_definitions.ModulesAccess_Task3_StepDefinitions.user_is_on_the_login_page()"
@@ -24,162 +24,80 @@
         ]
       },
       {
-        "start_timestamp": "2021-02-25T00:55:20.033Z",
-        "line": 35,
-        "name": "As a student I should be able to search books with different categories",
+        "start_timestamp": "2021-02-25T15:34:26.871Z",
+        "line": 7,
+        "name": "verify user status",
         "description": "",
-        "id": "\"7.-as-a-students--i-should-be-able-to-search-books-with-different-categories;as-a-student-i-should-be-able-to-search-books-with-different-categories;;2",
+        "id": "user-status-feature;verify-user-status",
         "type": "scenario",
-        "keyword": "Scenario Outline",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 1187000000,
+              "duration": 282000000,
               "status": "passed"
             },
-            "line": 9,
-            "name": "user enter \"student104@library\" and \"73ndoZd0\"",
+            "line": 8,
+            "name": "Librarian enter \"\u003clibrarianEmail\u003e\" and \"\u003cPassword\u003e\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"student104@library\"",
-                  "offset": 11
+                  "val": "\"\u003clibrarianEmail\u003e\"",
+                  "offset": 16
                 },
                 {
-                  "val": "\"73ndoZd0\"",
-                  "offset": 36
+                  "val": "\"\u003cPassword\u003e\"",
+                  "offset": 39
                 }
               ],
-              "location": "com.cybertek.step_definitions.ModulesAccess_Task3_StepDefinitions.user_enter_and(java.lang.String,java.lang.String)"
+              "location": "com.cybertek.step_definitions.ModulesAccess_Task3_StepDefinitions.librarianEnterAnd(java.lang.String,java.lang.String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 1480000000,
+              "duration": 2062000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Librarians click on UserTitle  link",
+            "match": {
+              "location": "com.cybertek.step_definitions.AddUser_Task4_StepDefinitions.librariansClickOnUserTitleLink()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2058000000,
               "status": "passed"
             },
             "line": 10,
-            "name": "student click on Book Categories",
+            "name": "the user  can click Status dropdown",
             "match": {
-              "location": "com.cybertek.step_definitions.BookCategories_Task7_StepDefinitions.student_click_on_book_categories()"
+              "location": "com.cybertek.step_definitions.UserStatus_Task10_1_StepDefinitions.theUserCanClickStatusDropdown()"
             },
-            "keyword": "When "
+            "keyword": "And "
           },
           {
             "result": {
-              "duration": 2994000000,
-              "status": "passed"
+              "error_message": "java.lang.AssertionError: List are not equal expected:\u003c[ACTIVE, INACTIVE]\u003e but was:\u003c[ALL, Librarian, Students]\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:120)\r\n\tat com.cybertek.step_definitions.UserGroupCategory_Task9_StepDefinitions.the_user_should_see_the_following_options(UserGroupCategory_Task9_StepDefinitions.java:29)\r\n\tat ✽.the user should see the following options:(file:///C:/Users/boden/Desktop/cybertek-library-app/src/test/resources/features/UserStatus.feature:11)\r\n",
+              "duration": 2132000000,
+              "status": "failed"
             },
             "line": 11,
-            "name": "user sees All options",
+            "name": "the user should see the following options:",
             "match": {
-              "location": "com.cybertek.step_definitions.BookCategories_Task7_StepDefinitions.user_sees_all_options(java.util.List\u003cjava.lang.String\u003e)"
+              "location": "com.cybertek.step_definitions.UserGroupCategory_Task9_StepDefinitions.the_user_should_see_the_following_options(java.util.List\u003cjava.lang.String\u003e)"
             },
             "rows": [
               {
                 "cells": [
-                  "ALL"
+                  "ACTIVE"
                 ]
               },
               {
                 "cells": [
-                  "Action and Adventure"
-                ]
-              },
-              {
-                "cells": [
-                  "Anthology"
-                ]
-              },
-              {
-                "cells": [
-                  "Classic"
-                ]
-              },
-              {
-                "cells": [
-                  "Comic and Graphic Novel"
-                ]
-              },
-              {
-                "cells": [
-                  "Crime and Detective"
-                ]
-              },
-              {
-                "cells": [
-                  "Drama"
-                ]
-              },
-              {
-                "cells": [
-                  "Fable"
-                ]
-              },
-              {
-                "cells": [
-                  "Fairy Tale"
-                ]
-              },
-              {
-                "cells": [
-                  "Fan-Fiction"
-                ]
-              },
-              {
-                "cells": [
-                  "Fantasy"
-                ]
-              },
-              {
-                "cells": [
-                  "Historical Fiction"
-                ]
-              },
-              {
-                "cells": [
-                  "Horror"
-                ]
-              },
-              {
-                "cells": [
-                  "Science Fiction"
-                ]
-              },
-              {
-                "cells": [
-                  "Biography/Autobiography"
-                ]
-              },
-              {
-                "cells": [
-                  "Humor"
-                ]
-              },
-              {
-                "cells": [
-                  "Romance"
-                ]
-              },
-              {
-                "cells": [
-                  "Short Story"
-                ]
-              },
-              {
-                "cells": [
-                  "Essay"
-                ]
-              },
-              {
-                "cells": [
-                  "Memoir"
-                ]
-              },
-              {
-                "cells": [
-                  "Poetry"
+                  "INACTIVE"
                 ]
               }
             ],
@@ -188,16 +106,16 @@
         ],
         "tags": [
           {
-            "name": "@categories"
+            "name": "@status"
           }
         ]
       }
     ],
-    "name": "\"7. As a students, I should be able to search books with different categories",
+    "name": "User status feature",
     "description": "",
-    "id": "\"7.-as-a-students--i-should-be-able-to-search-books-with-different-categories",
+    "id": "user-status-feature",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/BookCategories.feature",
+    "uri": "file:src/test/resources/features/UserStatus.feature",
     "tags": []
   }
 ]

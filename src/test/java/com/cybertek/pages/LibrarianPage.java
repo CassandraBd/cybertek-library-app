@@ -41,11 +41,14 @@ public class LibrarianPage extends ShowRecordsPage {
     @FindBy(xpath = "//*[@id=\"toast-container\"]")
     public WebElement  updatedAlert;
 
-
     @FindBy (id = "user_groups")
     public WebElement userGroupLink;
 
     @FindBy(xpath = "//th")
     public List<WebElement> headerSelection;
+
+    @FindBy(xpath = "//*[@id=\"tbl_users\"]/thead/tr/th[6]")
+    public WebElement userStatus;
+
 
 }
