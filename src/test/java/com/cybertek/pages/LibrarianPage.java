@@ -50,8 +50,6 @@ public class LibrarianPage extends ShowRecordsPage {
  //   @FindBy(xpath = "//*[@id=\"tbl_users\"]/thead/tr/th[6]")
   //  public WebElement userStatus;
 
-    @FindBy (id = "user_status")
-    public WebElement userStatusLink;
 
 
 

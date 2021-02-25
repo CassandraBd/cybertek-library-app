@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3032000000,
+              "duration": 2999000000,
               "status": "passed"
             },
             "line": 4,
@@ -24,7 +24,7 @@
         ]
       },
       {
-        "start_timestamp": "2021-02-25T17:48:10.587Z",
+        "start_timestamp": "2021-02-25T19:33:40.961Z",
         "line": 7,
         "name": "verify user status",
         "description": "",
@@ -34,7 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 187000000,
+              "duration": 215000000,
               "status": "passed"
             },
             "line": 8,
@@ -56,7 +56,7 @@
           },
           {
             "result": {
-              "duration": 2066000000,
+              "duration": 2070000000,
               "status": "passed"
             },
             "line": 9,
@@ -68,7 +68,7 @@
           },
           {
             "result": {
-              "duration": 248000000,
+              "duration": 189000000,
               "status": "passed"
             },
             "line": 10,
@@ -80,14 +80,13 @@
           },
           {
             "result": {
-              "error_message": "java.lang.AssertionError: List are not equal expected:\u003c[ACTIVE, INACTIVE]\u003e but was:\u003c[ALL, Librarian, Students]\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:120)\r\n\tat com.cybertek.step_definitions.UserGroupCategory_Task9_StepDefinitions.the_user_should_see_the_following_options(UserGroupCategory_Task9_StepDefinitions.java:29)\r\n\tat ✽.the user should see the following options:(file:///C:/Users/boden/Desktop/cybertek-library-app/src/test/resources/features/UserStatus.feature:11)\r\n",
-              "duration": 2131000000,
-              "status": "failed"
+              "duration": 2770000000,
+              "status": "passed"
             },
             "line": 11,
-            "name": "the user should see the following options:",
+            "name": "the user should see the following options,",
             "match": {
-              "location": "com.cybertek.step_definitions.UserGroupCategory_Task9_StepDefinitions.the_user_should_see_the_following_options(java.util.List\u003cjava.lang.String\u003e)"
+              "location": "com.cybertek.step_definitions.UserStatus_Task10_1_StepDefinitions.theUserShouldSeeTheFollowingOptions(java.util.List\u003cjava.lang.String\u003e)"
             },
             "rows": [
               {

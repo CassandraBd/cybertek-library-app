@@ -21,18 +21,23 @@ public class UserStatus_Task10_1_StepDefinitions {
     }
 
 
-    @Then("the user click Status dropdown")
-    public void the_user_click_status_dropdown(List<String> options) {
+ //       @Then("the user click Status dropdown")
+ //       public void the_user_click_status_dropdown(List<String> options) {
     //    BrowserUtils.waitForVisibilty(loginPage.userStatusLink, 3);
     //    List<String> actualColumnNames = BrowserUtils.getElementsText(loginPage.userStatusLink);
     //    Assert.assertEquals(actualColumnNames, options);
+
+  //  }
+
+    @Then("the user should see the following options,")
+    public void theUserShouldSeeTheFollowingOptions(List<String> options) {
+
         select = new Select(loginPage.userStatusLink);
         List<String> userOptions = BrowserUtils.getElementsText(select.getOptions());
-        System.out.println("userOptions = " + userOptions);
+        System.out.println("userDiffOptions = " + userOptions);
         System.out.println("options = " + options);
         BrowserUtils.wait(2);
-        Assert.assertEquals("List are not equal", options, userOptions);
+        Assert.assertEquals(" They are not the same", options, userOptions);
         Driver.closeDriver();
     }
-
 }

@@ -50,6 +50,10 @@ public class LoginPage extends LibrarianPage {
     @FindBy(id = "navbarDropdown")
     public WebElement userTitle;
 
+    @FindBy (id = "user_status")
+    public WebElement userStatusLink;
+
+
     public void login(String userName,String Password)
     {
         userEmail.sendKeys(userName);

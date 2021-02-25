@@ -8,7 +8,8 @@ Feature: User status feature
     When Librarian enter "<librarianEmail>" and "<Password>"
     Then Librarians click on UserTitle  link
     And the user  can click Status dropdown
-    Then the user should see the following options:
+    Then the user should see the following options,
+
 
       | ACTIVE   |
       | INACTIVE |
