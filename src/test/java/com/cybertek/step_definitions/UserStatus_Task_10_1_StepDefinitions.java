@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.Select;
 
 import java.util.List;
 
-public class UserStatus_Task10_1_StepDefinitions {
+public class UserStatus_Task_10_1_StepDefinitions {
 
     LoginPage loginPage = new LoginPage();
     Select select;

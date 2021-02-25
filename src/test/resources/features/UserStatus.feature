@@ -3,7 +3,7 @@ Feature: User status feature
   Background: User is already in login page
     Given user is on the login page
 
-    @status
+  @status
   Scenario: verify user status
     When Librarian enter "<librarianEmail>" and "<Password>"
     Then Librarians click on UserTitle  link
