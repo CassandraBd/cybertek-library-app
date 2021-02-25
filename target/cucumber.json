@@ -1,0 +1,203 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "User is already in login page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2803000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on the login page",
+            "match": {
+              "location": "com.cybertek.step_definitions.ModulesAccess_Task3_StepDefinitions.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-25T00:55:20.033Z",
+        "line": 35,
+        "name": "As a student I should be able to search books with different categories",
+        "description": "",
+        "id": "\"7.-as-a-students--i-should-be-able-to-search-books-with-different-categories;as-a-student-i-should-be-able-to-search-books-with-different-categories;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1187000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user enter \"student104@library\" and \"73ndoZd0\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"student104@library\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"73ndoZd0\"",
+                  "offset": 36
+                }
+              ],
+              "location": "com.cybertek.step_definitions.ModulesAccess_Task3_StepDefinitions.user_enter_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1480000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "student click on Book Categories",
+            "match": {
+              "location": "com.cybertek.step_definitions.BookCategories_Task7_StepDefinitions.student_click_on_book_categories()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2994000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user sees All options",
+            "match": {
+              "location": "com.cybertek.step_definitions.BookCategories_Task7_StepDefinitions.user_sees_all_options(java.util.List\u003cjava.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "ALL"
+                ]
+              },
+              {
+                "cells": [
+                  "Action and Adventure"
+                ]
+              },
+              {
+                "cells": [
+                  "Anthology"
+                ]
+              },
+              {
+                "cells": [
+                  "Classic"
+                ]
+              },
+              {
+                "cells": [
+                  "Comic and Graphic Novel"
+                ]
+              },
+              {
+                "cells": [
+                  "Crime and Detective"
+                ]
+              },
+              {
+                "cells": [
+                  "Drama"
+                ]
+              },
+              {
+                "cells": [
+                  "Fable"
+                ]
+              },
+              {
+                "cells": [
+                  "Fairy Tale"
+                ]
+              },
+              {
+                "cells": [
+                  "Fan-Fiction"
+                ]
+              },
+              {
+                "cells": [
+                  "Fantasy"
+                ]
+              },
+              {
+                "cells": [
+                  "Historical Fiction"
+                ]
+              },
+              {
+                "cells": [
+                  "Horror"
+                ]
+              },
+              {
+                "cells": [
+                  "Science Fiction"
+                ]
+              },
+              {
+                "cells": [
+                  "Biography/Autobiography"
+                ]
+              },
+              {
+                "cells": [
+                  "Humor"
+                ]
+              },
+              {
+                "cells": [
+                  "Romance"
+                ]
+              },
+              {
+                "cells": [
+                  "Short Story"
+                ]
+              },
+              {
+                "cells": [
+                  "Essay"
+                ]
+              },
+              {
+                "cells": [
+                  "Memoir"
+                ]
+              },
+              {
+                "cells": [
+                  "Poetry"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@categories"
+          }
+        ]
+      }
+    ],
+    "name": "\"7. As a students, I should be able to search books with different categories",
+    "description": "",
+    "id": "\"7.-as-a-students--i-should-be-able-to-search-books-with-different-categories",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/BookCategories.feature",
+    "tags": []
+  }
+]
